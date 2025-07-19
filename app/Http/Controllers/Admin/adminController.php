@@ -39,6 +39,13 @@ class adminController extends Controller
         return redirect('/bus');
     }
 
+    public function delete($id)
+    {
+        $bus = Bus::where('id', $id);
+        $bus->delete();
+
+        return redirect('/bus');
+    }
 
 
 }

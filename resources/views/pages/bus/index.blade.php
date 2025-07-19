@@ -33,6 +33,8 @@
           <th>No</th>
           <th>Bus</th>
           <th>Kategori</th>
+          <th>Lokasi Awal</th>
+          <th>Lokasi Akhir</th>
           <th>Harga</th>
           <th>Action</th>
         </tr>
@@ -43,6 +45,8 @@
             <td>{{ $loop->iteration }}</td>
             <td>{{ $b->name }}</td>
             <td>{{ $b->category_id}}</td>
+            <td></td>
+            <td></td>
             <td>{{ $b->price }}</td>
             <td>
                 <div class="d-flex">
